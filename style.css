@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+#card {
+  height: 30vw;
+  width: 20vw;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #000;
+  overflow: hidden;
+  position: relative;
+}
+#full-scr {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: none;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+}
+#progress {
+  height: 5px;
+  width: 100%;
+  background-color: #918e8e;
+}
+#growth {
+  height: 100%;
+  width: 50%;
+  background-color: #e8e1e1;
+  border-radius: 80px;
+}
+#storiya {
+  height: 5vw;
+  width: 100%;
+  /* background-color: rgb(60, 28, 224); */
+  border: 1px solid #dadada;
+  padding: 0.3vw;
+  white-space: nowrap;
+}
+#story {
+  height: 4vw;
+  width: 4vw;
+  /* background-color: rgb(213, 28, 83); */
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid red;
+  margin: 0 5px;
+}
+#story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 600px) {
+  #card {
+    height: 90vw;
+    width: 50vw;
+  }
+  #storiya {
+    height: 15vw;
+  }
+  #story {
+    height: 12vw;
+    width: 12vw;
+  }
+}
